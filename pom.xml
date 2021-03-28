@@ -23,6 +23,22 @@
             <artifactId>javafx-fxml</artifactId>
             <version>15.0.1</version>
         </dependency>
+
+        <!--  Nitrite Java Database  -->
+        <dependency>
+            <groupId>org.dizitart</groupId>
+            <artifactId>nitrite</artifactId>
+            <version>3.4.3</version>
+        </dependency>
+
+        <!--  Lombok - generating Getters & Setters  -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.18</version>
+        </dependency>
+
+
     </dependencies>
 
 
