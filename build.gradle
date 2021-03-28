@@ -19,7 +19,7 @@ group = 'org.loose.fis'
 version = '0.1.0-SNAPSHOT'
 description = 'A simple registration example using Java 15+, JavaFX, Maven / Gradle and saving users in Nitrite Java (with encoded passwords).'
 
-sourceCompatibility = 15
+sourceCompatibility = 11
 targetCompatibility = 11
 
 dependencies {
