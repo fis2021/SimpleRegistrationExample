@@ -33,7 +33,7 @@ jobs:
 
       # Builds and installs the artifact
       - name: Build and Install
-        run: ./mvnw clean install
+        run: mvn clean install
 
   # This workflow contains a single job called "build"
   build-gradle:
@@ -58,4 +58,4 @@ jobs:
 
       # Builds and installs the artifact
       - name: Build and Install
-        run: ./gradlew clean build
+        run: gradle clean build
