@@ -1,4 +1,4 @@
-package org.loose.sle;
+package org.loose.fis.sle;
 
 public class Controller {
 }

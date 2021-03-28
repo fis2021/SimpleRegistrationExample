@@ -1,4 +1,4 @@
-package org.loose.sle;
+package org.loose.fis.sle;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
