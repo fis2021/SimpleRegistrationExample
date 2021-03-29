@@ -46,7 +46,13 @@ or
 gradlew.bat clean build (for Windows)
 ```
 
-### Run the project
+### Open in IntelliJ IDEA
+To open the project in IntelliJ idea, you have to import it as either a Maven, or a Gradle project, depending on what you prefer. 
+After you import it, in order to be able to run it, you need to set up your IDE according to the [official documentation](https://openjfx.io/openjfx-docs/). Please read the section for `Non-Modular Projects from IDE`.
+If you managed to follow all the steps from the tutorial, you should also be able to start the application by pressing the run key to the left of the Main class.
+
+### Run the project with Maven / Gradle
+The project has already been setup for Maven and Gradle according to the above link.
 To start and run the project use one of the following commands:
 * `mvn javafx:run` or `./mvnw javafx:run` (run the `run` goal of the `javafx` maven plugin)
 * `gradle run` or `./gradlew run` (to start the `run` task of the `org.openjfx.javafxplugin` plugin)
