@@ -19,6 +19,5 @@ buildNumber.properties
 .gradle
 **/build/
 !src/**/build/
-gradle/
 
 .java-version
