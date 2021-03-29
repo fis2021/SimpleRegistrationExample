@@ -58,4 +58,4 @@ jobs:
 
       # Builds and installs the artifact
       - name: Build and Install
-        run: gradle clean build
+        run: ./gradlew clean build
