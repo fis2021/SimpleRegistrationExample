@@ -1,4 +1,4 @@
-package org.loose.fis.sle.exceptions;
+package org.loose.fis.sre.exceptions;
 
 public class UsernameAlreadyExistsException extends Exception {
 

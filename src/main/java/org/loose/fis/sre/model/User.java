@@ -1,4 +1,4 @@
-package org.loose.fis.sle.model;
+package org.loose.fis.sre.model;
 
 import org.dizitart.no2.objects.Id;
 

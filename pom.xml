@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <main.class.name>org.loose.fis.sle.Main</main.class.name>
+        <main.class.name>org.loose.fis.sre.Main</main.class.name>
         <final.jar.name>simple-registration-example</final.jar.name>
     </properties>
 
