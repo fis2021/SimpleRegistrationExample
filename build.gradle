@@ -3,6 +3,7 @@ plugins {
     id 'maven-publish'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'jacoco'
 }
 
 javafx {
@@ -39,5 +40,10 @@ dependencies {
 mainClassName = 'org.loose.fis.sre.Main'
 
 test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
     useJUnitPlatform()
+}
+
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
 }
