@@ -27,6 +27,17 @@ dependencies {
     implementation 'org.openjfx:javafx-fxml:15.0.1'
     implementation 'org.dizitart:nitrite:3.4.3'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.1'
+
+    testCompile 'org.testfx:testfx-core:4.0.16-alpha'
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.5.1'
+    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.5.1'
+    testCompile 'org.testfx:testfx-junit5:4.0.16-alpha'
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.13.2'
+    testCompile group: 'commons-io', name: 'commons-io', version: '2.8.0'
 }
 
 mainClassName = 'org.loose.fis.sre.Main'
+
+test {
+    useJUnitPlatform()
+}

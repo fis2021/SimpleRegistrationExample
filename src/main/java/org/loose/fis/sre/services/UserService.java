@@ -8,6 +8,7 @@ import org.loose.fis.sre.model.User;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
 import java.util.Objects;
 
 import static org.loose.fis.sre.services.FileSystemService.getPathToFile;
@@ -17,6 +18,7 @@ public class UserService {
     private static ObjectRepository<User> userRepository;
 
     public static void initDatabase() {
+        FileSystemService.initDirectory();
         Nitrite database = Nitrite.builder()
                 .filePath(getPathToFile("registration-example.db").toFile())
                 .openOrCreate("test", "test");
@@ -29,6 +31,10 @@ public class UserService {
         userRepository.insert(new User(username, encodePassword(username, password), role));
     }
 
+    public static List<User> getAllUsers() {
+        return userRepository.find().toList();
+    }
+
     private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
         for (User user : userRepository.find()) {
             if (Objects.equals(username, user.getUsername()))
@@ -36,7 +42,7 @@ public class UserService {
         }
     }
 
-    private static String encodePassword(String salt, String password) {
+    static String encodePassword(String salt, String password) {
         MessageDigest md = getMessageDigest();
         md.update(salt.getBytes(StandardCharsets.UTF_8));
 

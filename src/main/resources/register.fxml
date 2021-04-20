@@ -15,19 +15,19 @@
 
     <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
-    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <TextField fx:id="usernameField" id="username" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
     <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
-    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <PasswordField fx:id="passwordField" id="password" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
     <Label text="Role:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
 
-    <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+    <ChoiceBox fx:id="role" id="role" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
     </ChoiceBox>
 
-    <Text fx:id="registrationMessage" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <Text fx:id="registrationMessage" id="registrationMessage" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
-        <Button onAction="#handleRegisterAction" text="Register"/>
+        <Button onAction="#handleRegisterAction" id="registerButton" text="Register"/>
     </HBox>
 </GridPane>
